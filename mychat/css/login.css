@@ -1,0 +1,53 @@
+html {
+    min-height: 100%;
+    height: 100%;
+  }
+  body {
+    background-image: url('https://gw.alipayobjects.com/mdn/TinyAppInnovation/afts/img/A*a_boQ4zS84wAAAAAAAAAAAAAARQnAQ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    height: 100%;
+  }
+  .login {
+    padding-top: 30px;
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    font-family: sans-serif;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    background-color: white;
+    top: 150px;
+    left: calc(50% - 250px);
+  }
+  .login-info {
+    margin-bottom: 24px;
+  }
+  input {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 4px 11px;
+  }
+  .login-button {
+    padding: 6px 100px;
+    border: none;
+    background-color: rgb(24, 144, 255);
+    color: white;
+    border-radius: 4px;
+  }
+  .disappear {
+    animation: disappearAnimation 0.5s forwards;
+  }
+  @keyframes disappearAnimation {
+    from {
+      opacity: 1;
+      top: 150px;
+    }
+    to {
+      opacity: 0;
+      top: 1000px;
+    }
+  }
+  

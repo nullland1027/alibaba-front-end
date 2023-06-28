@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线聊天室</title>
+  <link rel="icon" type="image/x-icon" href="https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <!-- 登录框 -->
+  <div class="login" id="login">
+    <h2>账号登录</h2>
+    <div class="login-info">
+      用户名: <input id="inputName" placeholder="请输入用户名" />
+    </div>
+    <div class="login-info">
+      密码: <input id="inputPwd" type='password' placeholder="请输入密码" style="margin-left: 16px;" />
+    </div>
+    <button id="loginBtn" class="login-button">登录</button>
+  </div>
+
+  <!-- 聊天室 -->
+  <div class="chatroom" id="chatroom" style="display: none;">
+    <div class="friend-list">
+      <h2 class="my-profile">忘机</h2>
+      <div class="friend-box">
+        
+      </div>
+    </div>
+    <div class="chat-content">
+      <p class="friend-name"></p>
+      <div class="text-section">
+        
+      </div>
+      <div class="send-section">
+        <textarea class="input-area" id="myInput"></textarea>
+        <button class="send-button" id="myBtn">发送</button>
+      </div>
+    </div>
+  </div>
+  <img src="" alt="">
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
